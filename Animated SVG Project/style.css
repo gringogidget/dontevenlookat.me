@@ -1,0 +1,102 @@
+.eyelids {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	
+}
+
+.head {
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+.torso {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.rightArmUpper {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.rightArmLower {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.rightHandDown {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.leftArmUpper {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.leftArmLower {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.leftHandDown {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.rightLegUpper {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.rightLegLower {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.rightFoot {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.leftLegUpper {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.leftLegLower {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.leftFoot {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
