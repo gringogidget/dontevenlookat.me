@@ -5,6 +5,8 @@
 	
 }
 
+/**********HEAD***********/
+
 .head {
 	position: absolute;
 	top:0px;
@@ -99,4 +101,17 @@
 	top: 0px;
 	left: 0px;
 
+}
+
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+#box {
+    margin: 300px 0 0;
+     -webkit-animation: infinite-spinning 2s infinite;
 }
