@@ -1,58 +1,69 @@
+/********** eyelids **********/
+
 .eyelids {
 	position: absolute;
-	top:0px;
-	left: 0px;
+	top: 139px;
+	left: 617px;
+	z-index: 2;
+	-webkit-animation: eyelids 2s infinite;
 
 }
 
-/**********HEAD***********/
+@-webkit-keyframes eyelids {
+	          from { opacity: 1.0; }
+    0%   { -webkit-transform: rotate(0deg); }
+    25%  { -webkit-transform: rotate(-5deg); }
+    50%  { -webkit-transform: rotate(0deg); }
+    75%  { -webkit-transform: rotate(5deg); }
+    100% { -webkit-transform: rotate(0deg); }
+          to { opacity: 0.0; }
 
-.head {
+}
+
+/********** face **********/
+
+.face {
 	position: absolute;
-	top:0px;
-	left: 0px;
-	-webkit-animation: head 2s infinite;
+	top: 100px;
+	left: 600px;
+	z-index: 1;
+	-webkit-animation: face 2s infinite;
 }
 
-@-webkit-keyframes head {
+@-webkit-keyframes face {
     0%   { -webkit-transform: rotate(0deg); }
     25%  { -webkit-transform: rotate(-5deg); }
     50%  { -webkit-transform: rotate(0deg); }
     75%  { -webkit-transform: rotate(5deg); }
     100% { -webkit-transform: rotate(0deg); }
 
+}
+
+/********** torso **********/
+
 .torso {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 150px;
+	left: 575px;
 }
+
+/********** right arm **********/
+
+.rightArm {
+	position: absolute;
+	top: 100px;
+	left 600px;
+
+}
+
+
 
 .rightArmUpper {
     position: absolute;
 	top: 0px;
 	left: 0px;
-	-webkit-animation: rightArmUpper 5s infinite; /* Chrome, Safari, Opera */ 
-    animation: mymove 5s infinite;
-
 }
 
-/* Chrome, Safari, Opera */ 
-@-webkit-keyframes rightArmUpper {
-    0%   {top: 0px; left: 0px;}
-    25%  {top: 0px; left: 100px;}
-    50%  {top: 100px; left: 100px;}
-    75%  {top: 100px; left: 0px;}
-    100% {top: 0px; left: 0px;}
-}
-
-/* Standard syntax */
-@keyframes rightArmUpper {
-    0%   {top: 0px; left: 0px}
-    25%  {top: 0px; left: 100px;}
-    50%  {top: 100px; left: 100px;}
-    75%  {top: 100px; left: 0px;}
-    100% {top: 0px; left: 0px;}
-}
 
 .rightArmLower {
     position: absolute;
@@ -130,8 +141,9 @@
 	left: 0px;
 
 }
+*/
 
-/*experiment*/
+/*experiment
 
 @-webkit-keyframes infinite-spinning {
   from {
@@ -145,3 +157,5 @@
     margin: 300px 0 0;
      -webkit-animation: infinite-spinning 2s infinite;
 }
+
+*/
