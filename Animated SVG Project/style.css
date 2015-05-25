@@ -1,9 +1,14 @@
 /********** eyelids **********/
 
+.dancer {
+	position: relative;
+	top: -100px;
+}
+
 .eyelids {
 	position: absolute;
-	top: 139px;
-	left: 617px;
+	top: 200px;
+	left: 317px;
 	z-index: 2;
 	-webkit-animation: eyelids 2s infinite;
 
@@ -24,8 +29,8 @@
 
 .face {
 	position: absolute;
-	top: 100px;
-	left: 600px;
+	top: 162px;
+	left: 300px;
 	z-index: 1;
 	-webkit-animation: face 2s infinite;
 }
@@ -43,8 +48,18 @@
 
 .torso {
 	position: absolute;
-	top: 150px;
-	left: 575px;
+	top: 225px;
+	left: 277px;
+	-webkit-animation: torso 2s infinite;
+}
+
+@-webkit-keyframes torso {
+    0%   { -webkit-transform: rotate(0deg); }
+    25%  { -webkit-transform: rotate(-1deg); }
+    50%  { -webkit-transform: rotate(0deg); }
+    75%  { -webkit-transform: rotate(1deg); }
+    100% { -webkit-transform: rotate(0deg); }
+
 }
 
 /********** right arm **********/
@@ -142,8 +157,10 @@
 
 }
 
+
+
 .background {
-    position: absolute, center;
+    position: relative, center;
     z-index: -100;
 
 }
