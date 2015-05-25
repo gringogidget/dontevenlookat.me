@@ -3,13 +3,16 @@
 .dancer {
 	position: relative;
 	top: -150px;
+	left: 100px;
 }
+
+/********** face **********/
 
 .eyelids {
 	position: absolute;
-	top: 200px;
+	top: 203px;
 	left: 317px;
-	z-index: 2;
+	z-index: 4;
 	-webkit-animation: eyelids 2s infinite;
 
 }
@@ -25,11 +28,9 @@
 
 }
 
-/********** face **********/
-
 .face {
 	position: absolute;
-	top: 162px;
+	top: 165px;
 	left: 300px;
 	z-index: 3;
 	-webkit-animation: face 2s infinite;
@@ -82,19 +83,17 @@
 
 }
 
-
-
 .rightArmLower {
     position: absolute;
-	top: 0px;
-	left: 0px;
-
+	top: 360px;
+	left: 395px;
+	z-index: 1;
 }
 
 .rightHandDown {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 460px;
+	left: 390px;
 
 }
 
@@ -120,61 +119,67 @@
 
 .leftArmLower {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 360px;
+	left: 250px;
+	z-index: 1;
 
 }
 
 .leftHandDown {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 460px;
+	left: 257px;
 
 }
 
+/********** right leg **********/
+
 .rightLegUpper {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 430px;
+	left: 335px;
 
 }
 
 .rightLegLower {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 575px;
+	left: 335px;
+	z-index: 1;
 
 }
 
 .rightFoot {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 660px;
+	left: 340px;
 
 }
 
+/********** left leg **********/
+
 .leftLegUpper {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 430px;
+	left: 285px;
 
 }
 
 .leftLegLower {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 575px;
+	left: 302px;
+	z-index: 1;
 
 }
 
 .leftFoot {
     position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 660px;
+	left: 300px;
+
 
 }
-
-
 
 .background {
     position: relative, center;
