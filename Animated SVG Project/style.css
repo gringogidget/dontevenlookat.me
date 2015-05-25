@@ -1,5 +1,3 @@
-
-
 /********** eyelids **********/
 
 .eyelids {
@@ -145,10 +143,12 @@
 }
 
 .background {
-    position: absolute;
-    left: 175px;
+    position: absolute, center;
     z-index: -100;
+
 }
+
+
 
 /*experiment
 
