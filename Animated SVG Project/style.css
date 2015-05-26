@@ -288,22 +288,3 @@
     z-index: -10;
 
 }
-
-
-
-/*experiment
-
-@-webkit-keyframes infinite-spinning {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(50deg);
-  }
-}
-#box {
-    margin: 300px 0 0;
-     -webkit-animation: infinite-spinning 2s infinite;
-}
-
-*/
