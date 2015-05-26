@@ -2,7 +2,7 @@
 
 .dancer {
 	position: relative;
-	top: -150px;
+	top: -80px;
 	left: 100px;
 }
 
@@ -13,16 +13,16 @@
 	top: 203px;
 	left: 317px;
 	z-index: 4;
-	-webkit-animation: eyelids 2s infinite;
+	-webkit-animation: eyelids 5s infinite;
 
 }
 
 @-webkit-keyframes eyelids {
 	          from { opacity: 1.0; }
     0%   { -webkit-transform: rotate(0deg); }
-    25%  { -webkit-transform: rotate(-5deg); }
+    25%  { -webkit-transform: rotate(-10deg); }
     50%  { -webkit-transform: rotate(0deg); }
-    75%  { -webkit-transform: rotate(5deg); }
+    75%  { -webkit-transform: rotate(10deg); }
     100% { -webkit-transform: rotate(0deg); }
           to { opacity: 0.0; }
 
@@ -33,14 +33,14 @@
 	top: 165px;
 	left: 300px;
 	z-index: 3;
-	-webkit-animation: face 2s infinite;
+	-webkit-animation: face 5s infinite;
 }
 
 @-webkit-keyframes face {
     0%   { -webkit-transform: rotate(0deg); }
-    25%  { -webkit-transform: rotate(-5deg); }
+    25%  { -webkit-transform: rotate(-10deg); }
     50%  { -webkit-transform: rotate(0deg); }
-    75%  { -webkit-transform: rotate(5deg); }
+    75%  { -webkit-transform: rotate(10deg); }
     100% { -webkit-transform: rotate(0deg); }
 
 }
@@ -52,14 +52,14 @@
 	top: 225px;
 	left: 277px;
 	z-index: 2;
-	-webkit-animation: torso 2s infinite;
+	-webkit-animation: torso 5s infinite;
 }
 
 @-webkit-keyframes torso {
     0%   { -webkit-transform: rotate(0deg); }
-    25%  { -webkit-transform: rotate(-1deg); }
+    25%  { -webkit-transform: rotate(3deg); }
     50%  { -webkit-transform: rotate(0deg); }
-    75%  { -webkit-transform: rotate(1deg); }
+    75%  { -webkit-transform: rotate(-3deg); }
     100% { -webkit-transform: rotate(0deg); }
 
 }
@@ -76,9 +76,9 @@
 
 @-webkit-keyframes rightArmUpper {
     0%   { -webkit-transform: rotate(0deg); }
-    25%  { -webkit-transform: rotate(10deg); }
+    25%  { -webkit-transform: rotate(7deg); }
     50%  { -webkit-transform: rotate(0deg); }
-    75%  { -webkit-transform: rotate(-10deg); }
+    75%  { -webkit-transform: rotate(-7deg); }
     100% { -webkit-transform: rotate(0deg); }
 
 }
@@ -87,7 +87,7 @@
     position: absolute;
 	top: 360px;
 	left: 395px;
-	z-index: 2;
+	z-index: 5;
 	-webkit-animation: rightArmLower 5s infinite;
 }
 
@@ -104,6 +104,18 @@
     position: absolute;
 	top: 460px;
 	left: 390px;
+	z-index: 4;
+
+	-webkit-animation: rightHandDown 5s infinite;
+
+}
+
+@-webkit-keyframes rightHandDown {
+    0%   { left: 390px; top: 460px; }
+    25%  { left: 400px; top: 460px; }
+    50%  { left: 390px; top: 460px; }
+    75%  { left: 380px; top: 460px; }
+    100% { left: 390px; top: 460px; }
 
 }
 
@@ -148,6 +160,7 @@
     position: absolute;
 	top: 430px;
 	left: 335px;
+	z-index: ;
 
 }
 
@@ -193,7 +206,7 @@
 
 .background {
     position: relative, center;
-    z-index: -100;
+    z-index: -10;
 
 }
 
