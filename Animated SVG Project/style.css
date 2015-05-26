@@ -181,6 +181,16 @@
 	top: 430px;
 	left: 335px;
 	z-index: 1;
+	-webkit-animation: rightLegUpper 5s infinite;
+
+}
+
+@-webkit-keyframes rightLegUpper {
+    0%   { -webkit-transform: scale(); }
+    25%  { -webkit-transform: scale(0.90,0.90); }
+    50%  { -webkit-transform: scale(); }
+    75%  { -webkit-transform: scale(); }
+    100% { -webkit-transform: scale(); }
 
 }
 
@@ -189,6 +199,16 @@
 	top: 575px;
 	left: 335px;
 	z-index: 1;
+	-webkit-animation: rightLegLower 5s infinite;
+
+}
+
+@-webkit-keyframes rightLegLower {
+    0%   { -webkit-transform: scale(); }
+    25%  { -webkit-transform: scale(0.90,0.90); }
+    50%  { left: 335px; top: 550px; }
+    75%  { -webkit-transform: scale(); }
+    100% { -webkit-transform: scale(); }
 
 }
 
@@ -196,6 +216,16 @@
     position: absolute;
 	top: 660px;
 	left: 340px;
+	-webkit-animation: rightFoot 5s infinite;
+
+}
+
+@-webkit-keyframes rightFoot {
+    0%   { -webkit-transform: scale(); }
+    25%  { left: 340px; top: 635px; }
+    50%  { left: 340px; top: 635px; }
+    75%  { -webkit-transform: scale(); }
+    100% { -webkit-transform: scale(); }
 
 }
 
@@ -205,6 +235,16 @@
     position: absolute;
 	top: 430px;
 	left: 285px;
+	-webkit-animation: leftLegUpper 5s infinite;
+
+}
+
+@-webkit-keyframes leftLegUpper {
+    0%   { -webkit-transform: scale(); }
+    25%  { -webkit-transform: scale(); }
+    50%  { -webkit-transform: scale(); }
+    75%  { -webkit-transform: scale(0.90,0.90); }
+    100% { -webkit-transform: scale(); }
 
 }
 
@@ -213,6 +253,16 @@
 	top: 575px;
 	left: 302px;
 	z-index: 1;
+	-webkit-animation: leftLegLower 5s infinite;
+
+}
+
+@-webkit-keyframes leftLegLower {
+    0%  { -webkit-transform: scale(); }
+    25% { -webkit-transform: scale(); }
+    50% { -webkit-transform: scale(0.90,0.90); }
+    75% { top: 545px; left: 302px; }
+    1000% { -webkit-transform: scale(); }
 
 }
 
@@ -220,7 +270,16 @@
     position: absolute;
 	top: 660px;
 	left: 300px;
+	-webkit-animation: leftFoot 5s infinite;
 
+}
+
+@-webkit-keyframes leftFoot {
+    0%   { -webkit-transform: scale(); }
+    25%  { -webkit-transform: scale(); }
+    50%  { -webkit-transform: scale(); }
+    75%  { left: 300px; top: 630px; }
+    100% { left: 300px; top: 660px; }
 
 }
 
