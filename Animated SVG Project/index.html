@@ -1,12 +1,18 @@
 <head>
 
-<p>Hi, hello there. This will only work in Chrome (for now).</p>
+<p>Hi, hello there. </p>
+
+<!-- Happy birthday @hij1nx <3 -->
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
 </head>
 
 <body>
+
+    <audio id="soundtrack" src="audio/Careless.mp3" autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
             <div class="dancer">
                 <div class="eyelids"><img src="img/eyelids.png"></div>
@@ -35,5 +41,25 @@
 <p><button id="stop">Stop</button><button id="start">Start</button></p>
 <div id="animated"></div>
 
+<script>
+    var soundtrack = document.getElementById('soundtrack');
+    var dancer = document.querySelector('.dancer');
+    var startButton = document.getElementById('start');
+    var stopButton = document.getElementById('stop');
+
+    soundtrack.pause();
+
+    startButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        soundtrack.play();
+        dancer.classList.add('animated');
+    });
+
+    stopButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        soundtrack.pause();
+        dancer.classList.remove('animated');
+    });
+</script>
 
 </body>
