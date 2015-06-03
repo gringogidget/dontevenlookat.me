@@ -1,0 +1,92 @@
+body, html {
+  color: #000;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  background-image: url('http://dontevenlookat.me/img/geometry.png');
+}
+
+h1 {
+	margin-top: 30px;
+}
+
+a {
+ text-decoration: none; 
+ color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+p {
+	height: 150px;
+}
+
+
+.containers {
+	position: relative;
+	display: inline-block;
+ 	max-width: 1000px;
+}
+
+.containers div {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	background-color: #eaeaea;
+	cursor: pointer;
+}
+
+.containers div a {
+	position: relative;
+	top: 50%;
+	visibility: hidden;
+}
+
+/* Hover board */
+
+.containers div:nth-child(n):hover {
+	background-image: none;
+}
+
+.containers div:hover a {
+	visibility: visible;
+}
+
+/* Different images for each div in sequence */
+
+.containers div:nth-child(1) {
+	background-image: url('http://dontevenlookat.me/img/Officina.png');  
+}
+
+.containers div:nth-child(2) {
+	background-image: url('http://dontevenlookat.me/img/donut.png');
+}
+
+.containers div:nth-child(3) {
+	background-image: url('http://dontevenlookat.me/img/Worf.png');
+}
+
+.containers div:nth-child(4) {
+	background-image: url('http://dontevenlookat.me/img/gringogidget.png');
+}
+
+
+.containers div:nth-child(5) {
+	background-image: url('http://dontevenlookat.me/img/pizza.png');
+}
+
+.containers div:nth-child(6) {
+	background-image: url('http://dontevenlookat.me/img/terroir.png');
+}
+
+.socialmedia {
+ 	margin-top: 30px;
+
+}
+
+.socialmedia a {
+	padding: 20px;
+}
