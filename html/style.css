@@ -1,92 +1,464 @@
-body, html {
-  color: #000;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  background-image: url('http://dontevenlookat.me/img/geometry.png');
-}
+/********** eyelids **********/
 
-h1 {
-	margin-top: 30px;
-}
-
-a {
- text-decoration: none; 
- color: #000;
-}
-
-a:visited {
-    color: #000;
-}
-
-p {
-	height: 150px;
-}
-
-
-.containers {
+.dancer {
 	position: relative;
-	display: inline-block;
- 	max-width: 1000px;
+	top: -80px;
+	left: 100px;
 }
 
-.containers div {
-	position: relative;
-	display: inline-block;
-	width: 300px;
-	height: 200px;
-	margin: 10px;
-	background-color: #eaeaea;
-	cursor: pointer;
+/********** face **********/
+
+.eyelids {
+	position: absolute;
+	top: 203px;
+	left: 317px;
+	z-index: 4;
 }
 
-.containers div a {
-	position: relative;
-	top: 50%;
-	visibility: hidden;
+.dancer.animated .eyelids {
+    animation: eyelids 5s infinite;
 }
 
-/* Hover board */
-
-.containers div:nth-child(n):hover {
-	background-image: none;
-}
-
-.containers div:hover a {
-	visibility: visible;
-}
-
-/* Different images for each div in sequence */
-
-.containers div:nth-child(1) {
-	background-image: url('http://dontevenlookat.me/img/Officina.png');  
-}
-
-.containers div:nth-child(2) {
-	background-image: url('http://dontevenlookat.me/img/donut.png');
-}
-
-.containers div:nth-child(3) {
-	background-image: url('http://dontevenlookat.me/img/Worf.png');
-}
-
-.containers div:nth-child(4) {
-	background-image: url('http://dontevenlookat.me/img/gringogidget.png');
-}
-
-
-.containers div:nth-child(5) {
-	background-image: url('http://dontevenlookat.me/img/pizza.png');
-}
-
-.containers div:nth-child(6) {
-	background-image: url('http://dontevenlookat.me/img/terroir.png');
-}
-
-.socialmedia {
- 	margin-top: 30px;
+@keyframes eyelids {
+	          from { opacity: 1.0; }
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+          to { opacity: 0.0; }
 
 }
 
-.socialmedia a {
-	padding: 20px;
+@-webkit-keyframes .eyelids {
+              from { opacity: 1.0; }
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+          to { opacity: 0.0; }
+
+}
+
+
+.face {
+	position: absolute;
+	top: 165px;
+	left: 300px;
+	z-index: 3;
+}
+
+.dancer.animated .face {
+	animation: face 5s infinite;
+}
+
+@keyframes face {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@-webkit-keyframes face {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/********** torso **********/
+
+.torso {
+	position: absolute;
+	top: 225px;
+	left: 277px;
+	z-index: 2;
+
+}
+.dancer.animated .torso {
+	animation: torso 5s infinite;
+}
+
+@keyframes torso {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(3deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@-webkit-keyframes torso {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(3deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+/********** right arm **********/
+
+.rightArmUpper {
+	position: absolute;
+	top: 260px;
+	left: 375px;
+	z-index: 2;
+}
+.dancer.animated .rightArmUpper {
+	animation: rightArmUpper 5s infinite;
+}
+
+@keyframes rightArmUpper {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(7deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-7deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@-webkit-keyframes rightArmUpper {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(7deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-7deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+.rightArmLower {
+    position: absolute;
+	top: 360px;
+	left: 395px;
+	z-index: 5; 
+}
+.dancer.animated .rightArmLower {
+	animation: rightArmLower 5s infinite;
+}
+
+
+@keyframes rightArmLower {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@-webkit-keyframes rightArmLower {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+
+.rightHandDown {
+    position: absolute;
+	top: 460px;
+	left: 390px;
+	z-index: 4;
+}
+.dancer.animated .rightHandDown {
+	animation: rightHandDown 5s infinite;
+}
+
+
+@keyframes rightHandDown {
+    0%   { left: 390px; top: 460px; }
+    25%  { left: 400px; top: 460px; }
+    50%  { left: 390px; top: 460px; }
+    75%  { left: 380px; top: 460px; }
+    100% { left: 390px; top: 460px; }
+
+}
+
+@-webkit-keyframes rightHandDown {   
+    0%   { left: 390px; top: 460px; }
+    25%  { left: 400px; top: 460px; }
+    50%  { left: 390px; top: 460px; }
+    75%  { left: 380px; top: 460px; }
+    100% { left: 390px; top: 460px; }
+
+}
+
+/********** left arm **********/
+
+.leftArmUpper {
+	position: absolute;
+	top: 258px;
+	left: 250px;
+	z-index: 0;
+}
+.dancer.animated .leftArmUpper {
+	animation: leftArmUpper 5s infinite;
+}
+
+}
+
+@keyframes leftArmUpper {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-5deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-7deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@-webkit-keyframes leftArmUpper {   
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-5deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-7deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+.leftArmLower {
+    position: absolute;
+	top: 360px;
+	left: 250px;
+	z-index: 3;
+    transform-origin: 0 0;
+}
+.dancer.animated .leftArmLower {
+	animation: leftArmLower 5s infinite;
+
+}
+
+@keyframes leftArmLower {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-22deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@-webkit-keyframes leftArmLower {  
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-22deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.leftHandDown {
+    position: absolute;
+	top: 460px;
+	left: 257px;
+	z-index: 2;
+}
+.dancer.animated .leftHandDown {
+	animation: leftHandDown 5s infinite;
+
+}
+
+@keyframes leftHandDown {
+    0%   { left: 257px; top: 460px; }
+    25%  { left: 275px; top: 460px; }
+    50%  { left: 257px; top: 460px; transform: rotate(0); }
+    75%  { left: 305px; top: 445px; transform: rotate(-20deg); }
+    100% { left: 260px; top: 462px; }
+
+}
+
+@-webkit-keyframes leftHandDown {  
+    0%   { left: 257px; top: 460px; }
+    25%  { left: 275px; top: 460px; }
+    50%  { left: 257px; top: 460px; transform: rotate(0); }
+    75%  { left: 305px; top: 445px; transform: rotate(-20deg); }
+    100% { left: 260px; top: 462px; }
+
+}
+
+
+
+/********** right leg **********/
+
+.rightLegUpper {
+    position: absolute;
+	top: 430px;
+	left: 335px;
+	z-index: 1;
+}
+.dancer.animated .rightLegUpper {
+	animation: rightLegUpper 5s infinite;
+
+}
+
+@keyframes rightLegUpper {
+    0%   { transform: scale(); }
+    25%  { transform: scale(0.90,0.90); }
+    50%  { transform: scale(); }
+    75%  { transform: scale(); }
+    100% { transform: scale(); }
+
+}
+
+@-webkit-keyframes rightLegUpper {
+    0%   { transform: scale(); }
+    25%  { transform: scale(0.90,0.90); }
+    50%  { transform: scale(); }
+    75%  { transform: scale(); }
+    100% { transform: scale(); }
+
+}
+
+
+.rightLegLower {
+    position: absolute;
+	top: 575px;
+	left: 335px;
+	z-index: 1;
+}
+.dancer.animated .rightLegLower {
+	animation: rightLegLower 5s infinite;
+
+}
+
+@keyframes rightLegLower {
+    0%   { transform: scale(); }
+    25%  { transform: scale(0.90,0.90); }
+    50%  { left: 335px; top: 550px; }
+    75%  { transform: scale(); }
+    100% { transform: scale(); }
+
+}
+
+@-webkit-keyframes rightLegLower {
+    0%   { transform: scale(); }
+    25%  { transform: scale(0.90,0.90); }
+    50%  { left: 335px; top: 550px; }
+    75%  { transform: scale(); }
+    100% { transform: scale(); }
+
+}
+
+.rightFoot {
+    position: absolute;
+	top: 660px;
+	left: 340px;
+}
+.dancer.animated .rightFoot {
+	animation: rightFoot 5s infinite;
+
+}
+
+@keyframes rightFoot {
+    0%   { transform: scale(); }
+    25%  { left: 340px; top: 635px; }
+    50%  { left: 340px; top: 635px; }
+    75%  { transform: scale(); }
+    100% { transform: scale(); }
+
+}
+
+@-webkit-keyframes rightFoot {
+    0%   { transform: scale(); }
+    25%  { left: 340px; top: 635px; }
+    50%  { left: 340px; top: 635px; }
+    75%  { transform: scale(); }
+    100% { transform: scale(); }
+}
+
+/********** left leg **********/
+
+.leftLegUpper {
+    position: absolute;
+	top: 430px;
+	left: 285px;
+}
+.dancer.animated .leftLegUpper {
+	animation: leftLegUpper 5s infinite;
+
+}
+
+@keyframes leftLegUpper {
+    0%   { transform: scale(); }
+    25%  { transform: scale(); }
+    50%  { transform: scale(); }
+    75%  { transform: scale(0.90,0.90); }
+    100% { transform: scale(); }
+
+}
+
+@-webkit-keyframes leftLegUpper {
+    0%   { transform: scale(); }
+    25%  { transform: scale(); }
+    50%  { transform: scale(); }
+    75%  { transform: scale(0.90,0.90); }
+    100% { transform: scale(); }
+
+}
+
+.leftLegLower {
+    position: absolute;
+	top: 575px;
+	left: 302px;
+	z-index: 1;
+}
+.dancer.animated .leftLegLower {
+	animation: leftLegLower 5s infinite;
+
+}
+
+@keyframes leftLegLower {
+    0%  { transform: scale(); }
+    25% { transform: scale(); }
+    50% { transform: scale(0.90,0.90); }
+    75% { top: 545px; left: 302px; }
+    1000% { transform: scale(); }
+
+}
+
+@-webkit-keyframes leftLegLower {
+    0%  { transform: scale(); }
+    25% { transform: scale(); }
+    50% { transform: scale(0.90,0.90); }
+    75% { top: 545px; left: 302px; }
+    1000% { transform: scale(); }
+}
+
+
+.leftFoot {
+    position: absolute;
+	top: 660px;
+	left: 300px;
+
+}
+.dancer.animated .leftFoot { 
+	animation: leftFoot 5s infinite;
+
+}
+
+@keyframes leftFoot {
+    0%   { transform: scale(); }
+    25%  { transform: scale(); }
+    50%  { transform: scale(); }
+    75%  { left: 300px; top: 630px; }
+    100% { left: 300px; top: 660px; }
+
+}
+
+@-webkit-keyframes leftFoot {
+    0%   { transform: scale(); }
+    25%  { transform: scale(); }
+    50%  { transform: scale(); }
+    75%  { left: 300px; top: 630px; }
+    100% { left: 300px; top: 660px; }
+
+}    
+
+.background {
+    position: relative, center;
+    z-index: -10;
 }
